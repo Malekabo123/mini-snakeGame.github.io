@@ -1,0 +1,88 @@
+body{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.63);
+}
+
+.cell{
+    border: 1px solid #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.cell span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: red;
+}
+
+.cell span:not(#head){
+    width: 60%;
+    height: 60%;
+}
+
+.cell #head{
+    width: 80%;
+    height: 80%;
+}
+
+#retry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgb(98, 185, 98);
+    border: 0;
+    border-radius: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#retry:hover{
+    opacity: 0.8;
+}
+
+/* .cell:nth-child(10n+1){
+    background-color: red;
+}
+
+.cell:nth-child(-n+10){
+    background-color: red;
+}
+
+.cell:nth-child(10n+0){
+    background-color: red;
+}
+
+.cell:nth-last-child(-n+10){
+    background-color: red;
+} */
+
+
+
+/* .cell:nth-child(10n+3):not(:nth-last-child(-n+30)):not(:nth-child(-n+30)){
+    background-color: red;
+} */
