@@ -1,1 +1,1 @@
-# mini-snakeGame.github.io
+Snake game in which I practiced Javascript and jQuery
